@@ -14,7 +14,7 @@ Repositório para o Projeto Integrador III de Computação - 2025 1º Semestre
   - Stephanie de Oliveira Souza - @stephanie0503
   
 
-**Orientadora:** à definir
+**Orientador:** Dhyogo Nunes Costa
 
 Acrescentar informações úteis por aqui.
 

@@ -7,7 +7,7 @@ Repositório para desenvolvimento das atividades do Projeto Integrador III para 
 
 **Integrantes**: 
   - Alessandro Costa Ferreira
-  - Alexandre Timõteo da Luz
+  - Alexandre Timóteo da Luz
   - Aurineide de Jesus Viana
   - Bruno Yoshiyo Kodama Wadamori
   - Daniel Vrena Alves

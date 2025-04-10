@@ -1,0 +1,5 @@
+.el-table__body,
+.el-table__header-wrapper,
+.el-table__header {
+    width: 100% !important;
+}

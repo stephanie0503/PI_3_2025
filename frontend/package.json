@@ -1,0 +1,49 @@
+{
+  "name": "dinamica-connecta",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "electron:serve": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron .\"",
+    "electron:build": "npm run build && electron-builder"
+  },
+  "main": "main.js",
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@popperjs/core": "^2.11.8",
+    "animate.css": "^4.1.1",
+    "apexcharts": "^3.53.0",
+    "axios": "^1.7.3",
+    "bootstrap": "^5.3.3",
+    "consultar-cnpj": "^1.0.20",
+    "crypto-js": "^4.2.0",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.5",
+    "element-plus": "^2.8.0",
+    "feather-icons": "^4.29.2",
+    "jsonp": "^0.2.1",
+    "jspdf": "^2.5.2",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.37",
+    "vue-feather": "^2.0.0",
+    "vue-router": "^4.3.3",
+    "vue-slide-up-down": "^3.0.0",
+    "vue3-apexcharts": "^1.6.0",
+    "vue3-signature": "^0.2.4",
+    "vuetify": "^3.7.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue-jsx": "^4.0.1",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.0.1",
+    "electron": "^32.1.0",
+    "electron-builder": "^25.0.5",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.7",
+    "vite": "^5.3.1",
+    "wait-on": "^8.0.1"
+  }
+}

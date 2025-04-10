@@ -1,0 +1,12 @@
+@import './base.css';
+@import './element.css';
+
+:root {
+   --primary-color-indigo: #7367F0;
+   --secondary-color: white;
+}
+
+ body {
+    background-color: #F6F6F6;
+ }
+

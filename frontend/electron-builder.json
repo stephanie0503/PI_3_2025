@@ -1,0 +1,12 @@
+{
+    "appId": "com.example.app",
+    "productName": "VueElectronApp",
+    "files": [
+      "dist/**/*",
+      "main.js"
+    ],
+    "directories": {
+      "output": "dist_electron"
+    }
+  }
+  

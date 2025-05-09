@@ -212,16 +212,24 @@ A estrutura do banco de dados está sendo planejada, mas ainda não foi implemen
 ## Desenvolvedores/Contribuintes :octocat:
 
 Alessandro Costa Ferreira
+
 Alexandre Timóteo da Luz
+
 Aurineide de Jesus Viana
+
 Bruno Yoshiyo Kodama Wadamori
+
 Daniel Vrena Alves
+
 Felipe Ribeiro Naves
+
 Maria Lucineide Rodrigues Paulo
+
 Stephanie de Oliveira Souza - @stephanie0503|
+
 
 ## Licença
 
 The [MIT License]() (MIT)
 
-Copyright :copyright: Ano - Titulo do Projeto
+Copyright :copyright: 2025 - Orcanet

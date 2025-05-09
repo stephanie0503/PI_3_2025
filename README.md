@@ -193,6 +193,41 @@ npm run dev
 
 -dotenv – Utilizado para manipular variáveis de ambiente durante o desenvolvimento.
 
+## Telas do Sistema
+
+### Login Inicial e Dashboard 
+
+![image](https://github.com/user-attachments/assets/86bd679b-dd22-4256-b3ab-d378ed8fc9d9)
+
+![image](https://github.com/user-attachments/assets/156dea79-8928-4e7b-9f1c-9369fa1e6115)
+
+### Cadastro de Cliente Pesquisando o CNPJ 
+
+![image](https://github.com/user-attachments/assets/e2d69c39-7303-4b57-aefb-fc6fab33ed00)
+
+### Cadastro Preenchido Automaticamente 
+
+![image](https://github.com/user-attachments/assets/8b5268ef-f936-4d64-96dd-0c0153b6d4d4)
+
+### Criando Proposta para o cliente inserido 
+
+![image](https://github.com/user-attachments/assets/ad536f74-b03e-4ef4-9eb6-06ae0d7c296b)
+
+### Produto Inserido na Proposta 
+
+![image](https://github.com/user-attachments/assets/ff2a76d1-9362-4c09-998e-42066c17a143)
+
+### Resumo da Proposta 
+
+![image](https://github.com/user-attachments/assets/5cd6d7a8-c1be-4b5e-a305-dff16b2892de)
+
+
+
+
+
+
+
+
 
 ## Tarefas em aberto
 

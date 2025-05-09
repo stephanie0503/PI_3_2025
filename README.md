@@ -1,92 +1,227 @@
-![image](/imagens/banner_github.png)
-  
-# Orçanet - PI III 2025
-Repositório para desenvolvimento das atividades do Projeto Integrador III para Computação da UniVesp - 2025 1º Semestre
+<h1>Orçanet - PI III 2025</h1>
 
-## Grupo 17 - Turma 2 
+## Descrição do projeto
 
-**Integrantes**: 
-  - Alessandro Costa Ferreira
-  - Alexandre Timóteo da Luz
-  - Aurineide de Jesus Viana
-  - Bruno Yoshiyo Kodama Wadamori
-  - Daniel Vrena Alves
-  - Felipe Ribeiro Naves
-  - Maria Lucineide Rodrigues Paulo
-  - Stephanie de Oliveira Souza - @stephanie0503
-  
+<p align="justify">
+  Aplicação de melhorias na plataforma de cálculo de orçamento de produtos, o Orçanet, facilitando o trabalho e reduzindo erros no ambiente corporativo da empresa “Dinâmica Soluções em Telecom”. A Melhoria na automatização do processo na plataforma será baseada em uma aplicação web para preenchimento de dados, consulta para aprovação de orçamentos utilizando API, acrescentando relatórios e envio de e-mail, usando tecnologias como SQL para armazenar dados é uma aplicação com vários produtos, onde serão realizadas melhorias no preenchimento dos cálculos sobre a venda, consultas automáticas de CNPJ dos clientes na Receita Federal (RFB) através da API, etc.
+</p>
 
-**Orientador:** Dhyogo Nunes Costa
+## Funcionalidades
 
-**Tema:** Desenvolver um software com framework web ou aplicativo que utilize banco de dados, inclua script web (Javascript), nuvem, acessibilidade, controle de versão, integração contínua e testes. Com o uso de API e análises de dados.
+:heavy_check_mark: Sistema de autenticação
 
-**Video:** a ser gravado
+:heavy_check_mark: Cadastro de produtos
 
-## Sobre o projeto
+:heavy_check_mark: Casdatro de clientes/empresas
 
-Aplicação de melhorias na plataforma de cálculo de orçamento de produtos, o **Orçanet**, facilitando o trabalho e reduzindo erros no ambiente corporativo da empresa “Dinâmica Soluções em Telecom”. A Melhoria na automatização do processo na plataforma será baseada em uma aplicação web para preenchimento de dados, consulta para aprovação de orçamentos utilizando API, acrescentando relatórios e envio de e-mail, usando tecnologias como SQL para armazenar dados é uma aplicação com vários produtos, onde serão realizadas melhorias no preenchimento dos cálculos sobre a venda, consultas automáticas de CNPJ dos clientes na Receita Federal (RFB) através da API, etc. O arquivo, HTML para interface, CSS para o layout e Javascript para cálculos no navegador, PHP será usado para automatização e processamento, e GitHub para controle de versões. 
+:heavy_check_mark: Criar orçamentos
+
+:heavy_check_mark: Consulta de CNPJ
+
+## Demo:dash:
+
+> Link do deploy da aplicação: https://orcanet.connectip.app.br/
+
+Login: ```demo@univesp.br```
+
+Senha: ```demo123```
+...
+
+## Pré-requisitos
+
+:warning: PHP 8.1+ – Necessário para rodar o Laravel
+
+:warning: Composer – Gerenciador de dependências do PHP
+
+:warning: Laravel 10 – Framework backend
+
+:warning: MySQL 5.7+ ou 8.0+ – Banco de dados relacional
+
+:warning: Node.js 16.0+ – Necessário para rodar o Vite
+
+:warning: NPM – Já vem incluso com o Node.js
+
+:warning: Vite + Vue 3 – Ambiente frontend moderno
+
+:warning: Servidor HTTP (Apache ou Nginx) - Pode usar o XAMPP se escolher o Apache
+...
+
+## Como rodar a aplicação :arrow_forward:
+
+### Clonando o Repositório
+
+Para clonar este repositório, utilize o seguinte comando:
+
+```bash
+git clone https://github.com/stephanie0503/Orcanet_PI2025
+```
+
+## Banco de Dados
+
+### Criando o Banco de Dados e Usuário MySQL
+
+- **Acesse seu MySQL via terminal ou phpMyAdmin e execute os seguintes comandos**
+
+```sql
+
+CREATE DATABASE orcanet CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+CREATE USER 'orcanet_user'@'localhost' IDENTIFIED BY 'senha_segura';
+
+GRANT ALL PRIVILEGES ON orcanet.* TO 'orcanet_user'@'localhost';
+
+FLUSH PRIVILEGES;
+
+```
+
+:warning: Importante: anote o nome do banco, usuário e senha para configurar o .env do Laravel.
+
+### Importando o Arquivo .sql
+
+:warning: O arquivo esta na raiz do projeto, na pasta database, ajuste o caminho conforme necessário.
+
+```sql
+mysql -u orcanet_user -p orcanet < database/orcanet.sql
+
+```
+
+## Configurando o Backend
+
+### Configurando Variáveis de Ambiente
+
+Navegue até a pasta de nome backend e execute no terminal.
+
+```bash
+cp .env.example .env
+
+```
+
+Edite com as credenciais criadas:
+
+DB_DATABASE=orcanet
+DB_USERNAME=orcanet_user
+DB_PASSWORD=senha_segura
+
+### Instalar e verificar dependencias
+
+Ainda na pasta backend, no terminal use os comandos:
+
+```bash
+composer install
+php artisan key:generate
+php artisan serve
+```
+
+## Configurando o Frontend
+
+### Configurando Variáveis de Ambiente
+
+O Vue está dentro da pasta frontend. Copie e edite o arquivo .env-ex:
+
+```bash
+cp frontend/.env-ex frontend/.env
+```
+
+Edite a URL da API (ajuste a porta se necessário):
+
+```bash
+VITE_VUE_APP_API_BACKEND_URL=http://localhost:8000/api
+
+```
+
+### Instalar e verificar dependencias
+
+Rode as dependências e inicie a aplicação, no terminal use os comandos:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### Usuários:
+
+## Linguagens, dependencias e libs utilizadas :books:
+
+:books: Linguagens, dependências e libs utilizadas
+
+### Backend (Laravel)
+
+-Laravel 11 – Framework PHP para construção da API backend.
+
+-Laravel Passport – Implementa autenticação baseada em JWT via tokens, protegendo as rotas da API de forma segura.
+
+-Webklex Laravel IMAP – Biblioteca para interação com caixas de e-mail IMAP (usada para possíveis integrações ou leituras de e-mail automatizadas).
+
+### Frontend (Vue 3 + Vite)
+
+-Vue 3 – Framework progressivo para construção da interface do usuário.
+
+-Vite – Bundler moderno para projetos frontend, utilizado para desenvolvimento e build da aplicação.
+
+-Element Plus – Biblioteca de componentes UI baseada em Vue 3, utilizada para montar a interface da aplicação.
+
+-Pinia – Gerenciador de estado oficial do Vue 3, usado para controlar dados como o usuário autenticado.
+
+-Vue Router – Biblioteca de rotas oficial do Vue.
+
+-Axios – Cliente HTTP utilizado para fazer requisições à API Laravel.
+
+-Consultar CNPJ – Biblioteca para realizar consultas públicas de CNPJ diretamente da Receita Federal.
+
+-ApexCharts + Vue3 ApexCharts – Usada para gerar gráficos interativos no dashboard.
+
+-Day.js – Manipulação de datas e horários com uma API enxuta e compatível com Moment.js.
+
+-Moment.js – Também utilizado para manipulação de datas, em pontos mais específicos do sistema.
+
+-Feather Icons / Vue Feather – Conjunto leve de ícones vetoriais.
+
+-Animate.css – Biblioteca CSS para animações simples na interface.
+
+-Bootstrap 5 – Utilizado pontualmente para estrutura e estilo.
+
+-Crypto-JS – Para codificação e decodificação segura de dados.
+
+-Vue3 Signature – Captura de assinaturas manuais dentro da interface (em formulários, por exemplo).
+
+-Vue Slide Up Down – Animação de transição vertical para exibir ou ocultar seções com suavidade.
+
+-jsPDF – Geração de arquivos PDF diretamente do navegador.
+
+-JSONP – Utilizado para requisições JSONP em contextos específicos onde o CORS impede requisições diretas.
+
+-dotenv – Utilizado para manipular variáveis de ambiente durante o desenvolvimento.
 
 
-### Back-End
+## Tarefas em aberto
 
-Foi criada uma máquina virtual para ser utilizada como nosso servidor da aplicação no nuvem utilzada pela empresa ([Contabo](https://contabo.com/en/)) com as seguintes configurações:
+- **WebMail**: O projeto conta com um módulo de WebMail que está em desenvolvimento.
+A funcionalidade tem como objetivo permitir o envio e recebimento de e-mails diretamente pela interface da aplicação, integrando-se com caixas de e-mail via IMAP utilizando a biblioteca webklex/laravel-imap.
 
-- Ubuntu 20.04 
-- 4 vCPU Cores
-- 6 GB RAM
-- 100 GB NVMe
-
-#### Ferramentas necessárias:
-
-- Apache 2.4.62 (para servidor web)
-- MySQL 5.7.40  (Banco de Dados)
-- phpMyAdmin 5.2 (SGBD)
-- PHP-8.3
-
-  ![image](https://github.com/stephanie0503/Orcanet_PI2024/blob/main/imagens/Maquina_Virtual.png)
-
-### Banco de Dados:
-
-Com base no arquivo .xls fornecido pelo cliente, foram inseridos os produtos disponíveis na empresa e pode ser visualizado na pasta database do projeto, no arquivo [orcanet.sql](https://github.com/stephanie0503/Orcanet_PI2024/blob/main/database/orcanet.sql)
-
-Exemplo de  registro no banco de dados:
-![image](https://github.com/stephanie0503/Orcanet_PI2024/blob/main/imagens/Exemplo_Banco_de_Dados.png)
+- **Relatórios** (Financeiro e Vendas):
+A aplicação terá um módulo dedicado à geração de relatórios detalhados, contemplando dados financeiros e de vendas.
+A ideia é permitir a visualização de métricas importantes do negócio com filtros por período, cliente, produto e outros critérios relevantes.
+A estrutura inicial está em esboço, mas ainda precisa ser implementada tanto no backend quanto no frontend. A biblioteca de gráficos ApexCharts será utilizada para visualização dos dados.
 
 
-### Front-End
+- **Módulo de Estoque** O sistema contará com um controle de estoque para acompanhar a entrada, saída e saldo de produtos cadastrados.
+Esse módulo integrará diretamente com a criação de orçamentos e vendas, garantindo o controle em tempo real do inventário.
+A estrutura do banco de dados está sendo planejada, mas ainda não foi implementada a lógica de controle nem as telas do frontend.
 
-Para o front-end foi utilizado o framework Vue.js com estilo Material Design: 
-![image](https://github.com/stephanie0503/Orcanet_PI2024/blob/main/imagens/Exemplo_frontend.png)
+## Desenvolvedores/Contribuintes :octocat:
 
+Alessandro Costa Ferreira
+Alexandre Timóteo da Luz
+Aurineide de Jesus Viana
+Bruno Yoshiyo Kodama Wadamori
+Daniel Vrena Alves
+Felipe Ribeiro Naves
+Maria Lucineide Rodrigues Paulo
+Stephanie de Oliveira Souza - @stephanie0503|
 
+## Licença
 
----
+The [MIT License]() (MIT)
 
-## Modelos de documentos do Projeto Integrador
-
-Nesta página você encontra os modelos dos documentos disponíveis para a realização do seu Projeto Integrador.
-
-Os modelos de plano de ação, relatório parcial, relatório final e ficha técnica do vídeo são de uso obrigatório.
-
-- [Modelo do **Plano de ação**](https://assets.univesp.br/Proj_Integrador/2025-1S/Modelo-Plano_de_Acao.docx)
-    
-- [Modelo do **Relatório parcial**](https://assets.univesp.br/Proj_Integrador/2025-1S/Modelo_-_Relatorio_Parcial.docx)
-    
-- [Modelo do **Levantamento bibliográfico**](https://assets.univesp.br/Proj_Integrador/2025-1S/Levantamento%20bibliogr%C3%A1fico%20.docx)
-    
-- [Modelo para **Proposta individual**](https://assets.univesp.br/Proj_Integrador/2025-1S/Modelo%20de%20proposta%20individual.docx)
-    
-- [Modelo do **Formulário de avaliação colaborativa**](https://assets.univesp.br/Proj_Integrador/2025-1S/Modelo_Avaliacao_Colaborativa.docx)
-    
-- [Modelo do **Relatório final**](https://assets.univesp.br/Proj_Integrador/2025-1S/Modelo_Relatorio_Final.docx)
-    
-- [Modelo da **Ficha técnica do vídeo**](https://assets.univesp.br/Proj_Integrador/2025-1S/Modelo-Ficha_Tecnica_do_video.docx)
-    
-- [Modelo do **Termo de empresa/instituição**](https://assets.univesp.br/Proj_Integrador/2025-1S/Modelo-Termo_de_autorizacao_da_empresa.docx)
-    
-- [Modelo do **Termo de autorização de uso de imagem**](https://assets.univesp.br/Proj_Integrador/2025-1S/Modelo_Termo_de_autorizacao_de_uso_de_imagem.docx)
-    
-- [Modelo do **Termo de consentimento livre e esclarecido**](https://assets.univesp.br/Proj_Integrador/2025-1S/Modelo-Termo_de_Consentimento_Livre_e_Esclarecido.docx)
-    
-- [Modelo da **Carta de apresentação do Projeto Integrador - Eixo Computação**](https://assets.univesp.br/Proj_Integrador/2025-1S/Modelo_Carta-Apresentacao_PI_Computacao.docx)
-    
+Copyright :copyright: Ano - Titulo do Projeto

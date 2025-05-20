@@ -147,51 +147,51 @@ npm run dev
 
 ### Backend (Laravel)
 
--Laravel 11 – Framework PHP para construção da API backend.
+- Laravel 11 – Framework PHP para construção da API backend.
 
--Laravel Passport – Implementa autenticação baseada em JWT via tokens, protegendo as rotas da API de forma segura.
+- Laravel Passport – Implementa autenticação baseada em JWT via tokens, protegendo as rotas da API de forma segura.
 
--Webklex Laravel IMAP – Biblioteca para interação com caixas de e-mail IMAP (usada para possíveis integrações ou leituras de e-mail automatizadas).
+- Webklex Laravel IMAP – Biblioteca para interação com caixas de e-mail IMAP (usada para possíveis integrações ou leituras de e-mail automatizadas).
 
 ### Frontend (Vue 3 + Vite)
 
--Vue 3 – Framework progressivo para construção da interface do usuário.
+- Vue 3 – Framework progressivo para construção da interface do usuário.
 
--Vite – Bundler moderno para projetos frontend, utilizado para desenvolvimento e build da aplicação.
+- Vite – Bundler moderno para projetos frontend, utilizado para desenvolvimento e build da aplicação.
 
--Element Plus – Biblioteca de componentes UI baseada em Vue 3, utilizada para montar a interface da aplicação.
+- Element Plus – Biblioteca de componentes UI baseada em Vue 3, utilizada para montar a interface da aplicação.
 
--Pinia – Gerenciador de estado oficial do Vue 3, usado para controlar dados como o usuário autenticado.
+- Pinia – Gerenciador de estado oficial do Vue 3, usado para controlar dados como o usuário autenticado.
 
--Vue Router – Biblioteca de rotas oficial do Vue.
+- Vue Router – Biblioteca de rotas oficial do Vue.
 
--Axios – Cliente HTTP utilizado para fazer requisições à API Laravel.
+- Axios – Cliente HTTP utilizado para fazer requisições à API Laravel.
 
--Consultar CNPJ – Biblioteca para realizar consultas públicas de CNPJ diretamente da Receita Federal.
+- Consultar CNPJ – Biblioteca para realizar consultas públicas de CNPJ diretamente da Receita Federal.
 
--ApexCharts + Vue3 ApexCharts – Usada para gerar gráficos interativos no dashboard.
+- ApexCharts + Vue3 ApexCharts – Usada para gerar gráficos interativos no dashboard.
 
--Day.js – Manipulação de datas e horários com uma API enxuta e compatível com Moment.js.
+- Day.js – Manipulação de datas e horários com uma API enxuta e compatível com Moment.js.
 
--Moment.js – Também utilizado para manipulação de datas, em pontos mais específicos do sistema.
+- Moment.js – Também utilizado para manipulação de datas, em pontos mais específicos do sistema.
 
--Feather Icons / Vue Feather – Conjunto leve de ícones vetoriais.
+- Feather Icons / Vue Feather – Conjunto leve de ícones vetoriais.
 
--Animate.css – Biblioteca CSS para animações simples na interface.
+- Animate.css – Biblioteca CSS para animações simples na interface.
 
--Bootstrap 5 – Utilizado pontualmente para estrutura e estilo.
+- Bootstrap 5 – Utilizado pontualmente para estrutura e estilo.
 
--Crypto-JS – Para codificação e decodificação segura de dados.
+- Crypto-JS – Para codificação e decodificação segura de dados.
 
--Vue3 Signature – Captura de assinaturas manuais dentro da interface (em formulários, por exemplo).
+- Vue3 Signature – Captura de assinaturas manuais dentro da interface (em formulários, por exemplo).
 
--Vue Slide Up Down – Animação de transição vertical para exibir ou ocultar seções com suavidade.
+- Vue Slide Up Down – Animação de transição vertical para exibir ou ocultar seções com suavidade.
 
--jsPDF – Geração de arquivos PDF diretamente do navegador.
+- jsPDF – Geração de arquivos PDF diretamente do navegador.
 
--JSONP – Utilizado para requisições JSONP em contextos específicos onde o CORS impede requisições diretas.
+- JSONP – Utilizado para requisições JSONP em contextos específicos onde o CORS impede requisições diretas.
 
--dotenv – Utilizado para manipular variáveis de ambiente durante o desenvolvimento.
+- dotenv – Utilizado para manipular variáveis de ambiente durante o desenvolvimento.
 
 ## Telas do Sistema
 
@@ -260,7 +260,7 @@ Felipe Ribeiro Naves
 
 Maria Lucineide Rodrigues Paulo
 
-Stephanie de Oliveira Souza - @stephanie0503|
+Stephanie de Oliveira Souza
 
 
 ## Licença

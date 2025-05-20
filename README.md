@@ -261,10 +261,3 @@ Felipe Ribeiro Naves
 Maria Lucineide Rodrigues Paulo
 
 Stephanie de Oliveira Souza
-
-
-## Licença
-
-The [MIT License]() (MIT)
-
-Copyright :copyright: 2025 - Orcanet

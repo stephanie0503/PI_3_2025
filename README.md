@@ -12,7 +12,7 @@
 
 :heavy_check_mark: Cadastro de produtos
 
-:heavy_check_mark: Casdatro de clientes/empresas
+:heavy_check_mark: Cadastro de clientes/empresas
 
 :heavy_check_mark: Criar orçamentos
 
